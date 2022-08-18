@@ -1,6 +1,8 @@
 from greet import greetings
+from translate import Translator
+
+translator = Translator(to_lang='pt')
 
 for g in greetings:
-    print(g.title())
-    print("ABC")
-print("123")
+    print(translator.translate(g).title())
+
